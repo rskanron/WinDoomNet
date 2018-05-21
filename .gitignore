@@ -1,0 +1,5 @@
+WinDoomNet/bin
+WinDoomNet/obj
+.vs/*
+/.vs*
+build
