@@ -1,18 +1,29 @@
 <template>
 
-    <div style="max-width: 300px; text-align: center; display: flex; flexbox-diretion: column; flex-wrap: wrap">
+    <div style="text-align: center;">
 
-        <br>
-        
-        <div class="input-group payment-column" style="white-space: nowrap;">
-
-            <span class="input-group-addon">$</span>
-
-            <input class="form-control" v-model="amount" aria-label="Amount (to the nearest dollar)" style="text-align: right; width: 60px;">
-
-            <span class="input-group-addon">.00</span>
-
+        <div class="payment-column">
+            <p aria-label="Number of people for thursday.">
+                Thursday ($50)
+            </p>
+            <select id="selectNumThursday" class="form-control" v-model="selectNumThursday">
+                <option v-for="n in 21" :value="n-1">{{ n-1 }}</option>
+            </select>
         </div>
+
+        <div class="payment-column">
+            <p aria-label="Number of people for friday.">
+                Friday ($300)
+            </p>
+            <select id="selectNumWeekend" class="form-control" v-model="selectNumWeekend">
+                <option v-for="n in 21" :value="n-1">{{ n-1 }}</option>
+            </select>
+        </div>        
+
+        <div class="payment-column">
+            <p>Total: {{ totalAmountEntered }}</p>
+        </div>
+
 
         <div id="paypal-button-container" class="payment-column"></div>
         
@@ -30,22 +41,35 @@
 
 <style scoped>
     .payment-column {
+        margin: auto;
         padding: 10px;
+        
+    }
+    .payment-column > * {
+        display: inline;
     }
 </style>
 
 <script>
 
-    let enteredAmount = 300
+    let data =  {
+        selectNumThursday : 0,
+        selectNumWeekend : 0,
+        success : false,
+        error : false,
+    }
+
+    function getAmount() {
+        return (data.selectNumThursday * 50) + (data.selectNumWeekend * 300)
+    }
 
     export default {
         name: 'Main',
         data () {
-            return  {
-                amount : enteredAmount,
-                success : false,
-                error : false
-            }
+            return data
+        },
+        computed: {
+            totalAmountEntered : getAmount
         }
     }
 
@@ -61,7 +85,7 @@
             },
 
             payment: (data, actions) => {
-                let paymentAmount = enteredAmount + '.00'
+                let paymentAmount = getAmount() + '.00'
 
                 return actions.payment.create({
                     payment: {

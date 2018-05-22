@@ -18,7 +18,8 @@
     /* -moz-osx-font-smoothing: grayscale; */
     /* text-align: center; */
     color: #d45b3d;
-    /* margin-top: 30px; */
+    /* margin-top: 30px;
+     */
 
     background-color: black;
     height: 100%;
