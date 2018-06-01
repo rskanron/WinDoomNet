@@ -21,7 +21,7 @@
         </div>        
 
         <div class="payment-column">
-            <p>Total: {{ totalAmountEntered }}</p>
+            <p>Total: ${{ totalAmountEntered }}</p>
         </div>
 
 
