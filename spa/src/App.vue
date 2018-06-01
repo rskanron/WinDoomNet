@@ -13,6 +13,8 @@
 
 <style>
   #app {
+    margin: auto; 
+    max-width: 1920px;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     /* -moz-osx-font-smoothing: grayscale; */
@@ -28,6 +30,10 @@
   #banner {
     width: 100%;
     height: auto;
+  }
+
+  body {
+    background-color: black;
   }
 
 </style>

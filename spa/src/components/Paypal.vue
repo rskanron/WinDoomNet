@@ -1,7 +1,7 @@
 <template>
 
     <div style="text-align: center;">
-
+        <p>How many refugees are you bringing?</p>
         <div class="payment-column">
             <p aria-label="Number of people for thursday.">
                 Thursday ($50)
@@ -13,11 +13,11 @@
 
         <div class="payment-column">
             <p aria-label="Number of people for friday.">
-                Friday ($300)
+                Weekend ($300)
             </p>
             <select id="selectNumWeekend" class="form-control" v-model="selectNumWeekend">
                 <option v-for="n in 21" :value="n-1">{{ n-1 }}</option>
-            </select>
+            </select> 
         </div>        
 
         <div class="payment-column">
@@ -25,15 +25,9 @@
         </div>
 
 
-        <div id="paypal-button-container" class="payment-column"></div>
-        
-        <div v-if="success" class="alert alert-success">
-            <strong>Success!</strong> You're going to celebrate life with no rules and other decent punks like yourself! Ahem, however, there are rules at this celebration.
-        </div>
-
-        <div v-if="error" class="alert alert-danger">
-            <strong>Ooops!</strong>  something went wrong
-        </div>
+        <a :href="paymentLink" target="_blank">
+            <img id="pay" src="../assets/clicktopay.png">
+        </a>
 
     </div>
 
@@ -63,59 +57,21 @@
         return (data.selectNumThursday * 50) + (data.selectNumWeekend * 300)
     }
 
+    function getLink() {
+        let amount = getAmount()
+        return "https://www.paypal.me/RSkanron/" + amount
+    }
+
     export default {
         name: 'Main',
         data () {
             return data
         },
         computed: {
-            totalAmountEntered : getAmount
+            totalAmountEntered : getAmount,
+            paymentLink : getLink
         }
     }
 
-    paypal.Button.render(
-
-        {
-            env: 'sandbox', // sandbox | production
-            
-            commit: true,
-
-            client: {
-                sandbox: 'AaBlyzD7AUWU4FSkK_1wZ6LgFjn0XBozBpMA4ypfdo85tu4PNouFBKJ5VQXBcKDf1acCRuVKdcFtK03q'
-            },
-
-            payment: (data, actions) => {
-                let paymentAmount = getAmount() + '.00'
-
-                return actions.payment.create({
-                    payment: {
-                        transactions: [
-                            {
-                                amount: { 
-                                    total: paymentAmount, 
-                                    currency: 'USD' 
-                                }
-                            } 
-                        ]
-                    }
-                })
-            },
-
-            onAuthorize: (data, actions) => {
-
-                // var data = {
-                //     paymentID: data.paymentID,
-                //     payerID: data.payerID,
-                //     amount:this.amount
-                // };
-
-                return actions.payment.execute().then(function(payment) {
-                    window.alert('Payment Complete! ' + data.paymentID);
-                });
-            }
-        },
-
-        '#paypal-button-container'
-    );
-
 </script>
+
