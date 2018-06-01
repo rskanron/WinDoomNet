@@ -59,7 +59,7 @@
 
     function getLink() {
         let amount = getAmount()
-        return "https://www.paypal.me/RSkanron/" + amount
+        return "https://www.paypal.me/windhamfest/" + amount
     }
 
     export default {
