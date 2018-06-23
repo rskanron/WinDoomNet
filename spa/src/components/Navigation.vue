@@ -1,7 +1,8 @@
 <template>
     <div class="topnav" id="myTopnav">
-        <a href="/"       class="nav-link active-nav">Home</a>
-        <a href="/videos" class="nav-link"           >Videos</a>
+        
+        <router-link tag="a" to="/">Home</router-link>
+        <router-link tag="a" to="/videos">Videos</router-link>
 
         <a href="javascript:void(0);" class="icon" v-on:click="toggleNav">
         <i class="fa fa-bars"></i>
@@ -73,8 +74,6 @@
 </style>
 
 <script>
-
-    
 
     function toggleNav() {
         var x = document.getElementById("myTopnav");
