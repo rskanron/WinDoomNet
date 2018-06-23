@@ -27,9 +27,10 @@
   #app {
     margin: auto; 
     max-width: 1440px;
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25em;
     -webkit-font-smoothing: antialiased;
-    color: #e94016;
+    color: rgb(253, 78, 81);  
     background-color: black;
     height: 100%;
   }
