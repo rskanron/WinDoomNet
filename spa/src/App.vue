@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img id="banner" src="./assets/WinDoomFest_banner.png">
+    <img id="banner" src="./assets/windoomfest_banner_resized.gif"> 
 
     <navigation/>
 
@@ -29,7 +29,7 @@
     max-width: 1440px;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
-    color: #d45b3d;
+    color: #e94016;
     background-color: black;
     height: 100%;
   }

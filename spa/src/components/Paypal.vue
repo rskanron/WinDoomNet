@@ -12,7 +12,7 @@
             </p>
 
             <select id="selectNumThursday" class="form-control" v-model="selectNumThursday">
-                <option v-for="n in 21" :value="n-1">{{ n-1 }}</option>
+                <option v-for="n in 11" :value="n-1">{{ n-1 }}</option>
             </select>
 
         </div>
@@ -24,7 +24,7 @@
             </p>
 
             <select id="selectNumWeekend" class="form-control" v-model="selectNumWeekend">
-                <option v-for="n in 21" :value="n-1">{{ n-1 }}</option>
+                <option v-for="n in 11" :value="n-1">{{ n-1 }}</option>
             </select> 
             
         </div>        

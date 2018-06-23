@@ -1,7 +1,8 @@
 <template>
     <div class="topnav" id="myTopnav">
-        <a href="/" class="active">Home</a>
-        <a href="/videos">Videos</a>
+        <a href="/"       class="nav-link active-nav">Home</a>
+        <a href="/videos" class="nav-link"           >Videos</a>
+
         <a href="javascript:void(0);" class="icon" v-on:click="toggleNav">
         <i class="fa fa-bars"></i>
         </a>
@@ -28,13 +29,14 @@
 
     /* Change the color of links on hover */
     .topnav a:hover {
-        background-color: #ddd;
+        background-color: #ddd; 
         color: black;
     }
 
     /* Add an active class to highlight the current page */
-    .active {
-        background-color: #2850A0;
+    .active-nav {
+        background-color: rgb(216, 70, 72); 
+           /* rgb(23, 97, 255); */
         color: white;
     }
 
@@ -71,6 +73,9 @@
 </style>
 
 <script>
+
+    
+
     function toggleNav() {
         var x = document.getElementById("myTopnav");
         
