@@ -1,16 +1,18 @@
 <template>
-    <div class="topnav" id="myTopnav">
-        
+    <div class="topnav" id="myTopnav" v-on:click="toggleNav">
+        <a class="link-spacer" href="#">&nbsp;</a>
+
         <router-link tag="a" to="/">Home</router-link>
         <router-link tag="a" to="/videos">Videos</router-link>
 
-        <a href="javascript:void(0);" class="icon" v-on:click="toggleNav">
-        <i class="fa fa-bars"></i>
+        <a href="javascript:void(0);" class="icon" >
+            <i class="fa fa-bars"></i>
         </a>
     </div>    
 </template>
 
 <style scoped>
+
     /* Add a black background color to the top navigation */
     .topnav {
         background-color: #333;
@@ -29,7 +31,7 @@
     }
 
     /* Change the color of links on hover */
-    .topnav a:hover {
+    .topnav a:not(.link-spacer):hover {
         background-color: #ddd; 
         color: black;
     }
@@ -46,10 +48,10 @@
         display: none;
     }
 
-
     /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
     @media screen and (max-width: 600px) {
         .topnav a:not(:first-child) {display: none;}
+        
         .topnav a.icon {
             float: right;
             display: block;
@@ -64,11 +66,13 @@
             right: 0;
             top: 0;
         }
+
         .topnav.responsive a {
             float: none;
             display: block;
             text-align: left;
         }
+        
     }
 
 </style>

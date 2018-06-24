@@ -7,7 +7,7 @@
     <router-view/>
     
     <br><br>
-    <p style="text-align: center;">Developed by Rick Skanron</p>
+    <p style="text-align: center;">Web Site Developed by Rick Skanron</p>
   </div>
 </template>
 
@@ -30,7 +30,7 @@
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.25em;
     -webkit-font-smoothing: antialiased;
-    color: rgb(253, 78, 81);  
+    color: rgb(235, 82, 55);  
     background-color: black;
     height: 100%;
   }
