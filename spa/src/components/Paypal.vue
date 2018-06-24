@@ -1,23 +1,32 @@
 <template>
 
     <div style="text-align: center;">
+        <h2 style="text-align: center">Pay Here</h2>
+
         <p>How many refugees are you bringing?</p>
+
         <div class="payment-column">
+
             <p aria-label="Number of people for thursday.">
                 Thursday ($50)
             </p>
+
             <select id="selectNumThursday" class="form-control" v-model="selectNumThursday">
-                <option v-for="n in 21" :value="n-1">{{ n-1 }}</option>
+                <option v-for="n in 11" :value="n-1">{{ n-1 }}</option>
             </select>
+
         </div>
 
         <div class="payment-column">
+
             <p aria-label="Number of people for friday.">
                 Weekend ($300)
             </p>
+
             <select id="selectNumWeekend" class="form-control" v-model="selectNumWeekend">
-                <option v-for="n in 21" :value="n-1">{{ n-1 }}</option>
+                <option v-for="n in 11" :value="n-1">{{ n-1 }}</option>
             </select> 
+            
         </div>        
 
         <div class="payment-column">
@@ -63,7 +72,7 @@
     }
 
     export default {
-        name: 'Main',
+        name: 'PayPal',
         data () {
             return data
         },

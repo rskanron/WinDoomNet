@@ -1,15 +1,23 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Main from '@/components/Main'
+import Home from '@/components/Home'
+import VideoReel from '@/components/VideoReel'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
+  linkExactActiveClass: 'active-nav',
   routes: [
     {
       path: '/',
-      name: 'WinDoomNet',
-      component: Main
+      name: 'WinDoomFest',
+      component: Home
+    },
+    {
+      path: '/videos',
+      name: 'Videos',
+      component: VideoReel
     }
   ]
 })

@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img id="banner" src="./assets/windoomfest_banner.png">
+    <img id="banner" src="./assets/windoomfest_banner_resized.gif"> 
+
+    <navigation/>
+
     <router-view/>
+    
+    <br><br>
+    <p style="text-align: center;">Web Site Developed by Rick Skanron</p>
   </div>
 </template>
 
 <script>
+
+  import Navigation from './components/navigation'
+
   export default {
-    name: 'App'
+    name: 'App',
+    components: {
+      'Navigation': Navigation
+    }
   }
 </script>
 
 <style>
   #app {
     margin: auto; 
-    max-width: 1920px;
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    max-width: 1440px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25em;
     -webkit-font-smoothing: antialiased;
-    /* -moz-osx-font-smoothing: grayscale; */
-    /* text-align: center; */
-    color: #d45b3d;
-    /* margin-top: 30px;
-     */
-
+    color: rgb(235, 82, 55);  
     background-color: black;
     height: 100%;
   }
