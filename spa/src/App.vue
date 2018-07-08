@@ -4,10 +4,13 @@
 
     <navigation/>
 
+    <br>
+
     <router-view/>
     
     <br><br>
-    <p style="text-align: center;">Web Site Developed by Rick Skanron</p>
+    
+    <p style="text-align: center;">By Windhamtech</p>
   </div>
 </template>
 
@@ -42,6 +45,12 @@
 
   body {
     background-color: black;
+  }
+
+  .page_title {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 1.75em;
   }
 
 </style>

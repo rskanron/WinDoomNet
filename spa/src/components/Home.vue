@@ -2,11 +2,17 @@
 
   <div id="home">
 
+    <h1 class="page_title">Home</h1>
+    
+    <p>Get your post apocalyptic gear ready as we head to Valhala for WinDoomFest</p>
+
+    <p>Check out part 2 of this year's trailer from Geoff Thomas ...</p>
+
+    <br><br>
+
     <windoomfest2></windoomfest2>
 
     <br>
-
-    <paypal style="margin: auto;"></paypal>
     
   </div>
   
@@ -14,13 +20,11 @@
 
 <script>
 
-  import Paypal from './Paypal'
   import WinDoomFest2 from './videos/WinDoomFest2'
 
   export default {
     name: 'Home',
       components: {
-        'paypal': Paypal,
         'windoomfest2': WinDoomFest2
       }, 
     }
@@ -42,6 +46,10 @@
         height:100%;
         width:100%;
         position:absolute;
+    }
+    p {
+      text-align: center;
+      margin: 20px 50px;
     }
 
 </style>

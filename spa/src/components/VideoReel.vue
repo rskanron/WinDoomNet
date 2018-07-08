@@ -1,5 +1,7 @@
 <template>
     <div id="video_reel">
+
+        <h1 class="page_title">Videos</h1>
  <br>
         <windoomfest2></windoomfest2>
          <br>

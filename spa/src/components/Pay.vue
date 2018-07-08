@@ -1,9 +1,11 @@
 <template>
 
     <div style="text-align: center;">
-        <h2 style="text-align: center">Pay Here</h2>
+        <!-- <h1 class="page_title">Pay</h1> -->
 
-        <p>How many refugees are you bringing?</p>
+        <h1 class="page_title">Pay For Windhamfest</h1>
+
+        <!-- <p>How many refugees are you bringing?</p>
 
         <div class="payment-column">
 
@@ -31,12 +33,17 @@
 
         <div class="payment-column">
             <p>Total: ${{ totalAmountEntered }}</p>
-        </div>
-
+        </div> -->
 
         <a :href="paymentLink" target="_blank">
             <img id="pay" src="../assets/clicktopay.png">
         </a>
+
+        <h3>OR</h3>
+
+        <a href="https://venmo.com/Pat-Kelly">Venmo</a>
+
+        
 
     </div>
 
@@ -51,6 +58,13 @@
     .payment-column > * {
         display: inline;
     }
+
+    a, a:visited {
+        font-size: 2em;
+        color: blue;
+        /* text-decoration: none; */
+    }
+
 </style>
 
 <script>
@@ -72,7 +86,7 @@
     }
 
     export default {
-        name: 'PayPal',
+        name: 'Pay',
         data () {
             return data
         },
