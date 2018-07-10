@@ -2,7 +2,7 @@
 
   <div id="home">
 
-    <h1 class="page_title">Home</h1>
+    <h1 class="page_title">WinDoomFest</h1>
     
     <p>Get your post apocalyptic gear ready as we head to Valhala for WinDoomFest</p>
 
@@ -10,7 +10,9 @@
 
     <br><br>
 
-    <windoomfest2></windoomfest2>
+    <div id="windoomfest2">
+        <iframe src="https://www.youtube.com/embed/NShuitIuKnM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
 
     <br>
     
@@ -23,30 +25,25 @@
   import WinDoomFest2 from './videos/WinDoomFest2'
 
   export default {
-    name: 'Home',
-      components: {
-        'windoomfest2': WinDoomFest2
-      }, 
+    name: 'Home'
     }
 
 </script>
 
-<style>
-.video-responsive{
-        overflow:hidden;
-        padding-bottom:56.25%;
-        position:relative;
-        max-width: 90%;
-        margin: auto;
-        /* height:0; */
+<style scoped>
+    #windoomfest2 {
+        text-align: center;
     }
-    .video-responsive iframe{
-        left:0;
-        top:0;
-        height:100%;
-        width:100%;
-        position:absolute;
-    }
+
+    iframe {
+        min-height: 375px;
+        max-width: 700px;
+        /* padding-bottom: 40%; */
+        /* margin-bottom: -40%; */
+        width: 100%;
+        height: 100%;
+    } 
+    
     p {
       text-align: center;
       margin: 20px 50px;

@@ -13,17 +13,23 @@
 </template>
 
 <style scoped>
+    /* for mobile mode, so that the first item isn't showing at the top */
+    .link-spacer {
+        margin-left: -60px;
+    }
 
     /* Add a black background color to the top navigation */
     .topnav {
         background-color: #333;
         overflow: hidden;
         text-align: center;
+        /* margin-left: -60px; */
     }
 
     /* Style the links inside the navigation bar */
     .topnav a {
         display: inline-block;
+        
         color: #f2f2f2;
         text-align: center;
         padding: 14px 16px;

@@ -1,36 +1,33 @@
 <template>
-    <div id="video_reel">
+    <div id="videos">
 
         <h1 class="page_title">Videos</h1>
- <br>
-        <windoomfest2></windoomfest2>
-         <br>
-        <div id="windhamfestTrailer" class="windhamfest-video video-responsive">
-            <iframe src="https://player.vimeo.com/video/52329817" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
- <br>
-        <div id="windievalTimesRockumentary" class="windhamfest-video video-responsive">
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/n0GoiWoX7bU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
- <br>
-        <div id="super_windhamfest_rockumentary" class="windhamfest-video video-responsive">
-            <iframe src="https://player.vimeo.com/video/96666573" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
- <br>
-        <div id="backToWinhamfestVideo" class="windhamfest-video video-responsive">
-            <iframe src="https://player.vimeo.com/video/176507100" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
- <br>
-        <div id="backToWinhamfestVideo2" class="windhamfest-video video-responsive">
-            <iframe src="https://player.vimeo.com/video/174276567" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
- <br>
-        <div id="right_things_motos" class="windhamfest-video video-responsive">
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/B8yUvynCf-g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
- <br>
-        <div id="swim_race" class="windhamfest-video video-responsive">
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZXHXnmQ1vHI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+        <div id="video-reel">
+            <div id="windoomfest2">
+                <iframe src="https://www.youtube.com/embed/NShuitIuKnM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div id="windhamfestTrailer" >
+                <iframe src="https://player.vimeo.com/video/52329817" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div id="windievalTimesRockumentary" >
+                <iframe src="https://www.youtube-nocookie.com/embed/n0GoiWoX7bU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div id="super_windhamfest_rockumentary" >
+                <iframe src="https://player.vimeo.com/video/96666573" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div id="backToWinhamfestVideo" >
+                <iframe src="https://player.vimeo.com/video/176507100" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div id="backToWinhamfestVideo2" >
+                <iframe src="https://player.vimeo.com/video/174276567" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div id="right_things_motos" >
+                <iframe src="https://www.youtube-nocookie.com/embed/B8yUvynCf-g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div id="swim_race" >
+                <iframe src="https://www.youtube-nocookie.com/embed/ZXHXnmQ1vHI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
         </div>
         
         <br>
@@ -46,40 +43,32 @@
     import WinDoomFest2 from './videos/WinDoomFest2'
 
     export default {
-        name: 'VideoReel',
-        components: {
-            'windoomfest2': WinDoomFest2
-        }
+        name: 'VideoReel'
     }
 
 </script>
 
 
-<style>
-
-    .windhamfest-video {
-        /* margin: auto; */
-        /* position: relative; */
-    }
+<style scoped>
 
     #video-reel {
-
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
     }
 
-    .video-responsive{
-        overflow:hidden;
-        padding-bottom:56.25%;
-        position:relative;
-        max-width: 90%;
-        margin: auto;
-        /* height:0; */
+    #video-reel>* {
+        flex: 1 1 310px;
+        min-height: 250px;
+        margin: 0em 1.5em;
     }
-    .video-responsive iframe{
-        left:0;
-        top:0;
-        height:100%;
-        width:100%;
-        position:absolute;
+
+    iframe {
+        /* secret sauce for uniform 16:9ish dimensions */
+        /* padding-bottom: 56.25%; */
+        padding-bottom: 40%;
+        width: 100%;
+        height: 100%;
     }
 
 </style>

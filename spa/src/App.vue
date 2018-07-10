@@ -33,14 +33,15 @@
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.25em;
     -webkit-font-smoothing: antialiased;
-    color: rgb(235, 82, 55);  
+    /* color:  rgb(235, 82, 55);   */
+    color: #D82427;
     background-color: black;
     height: 100%;
   }
 
   #banner {
     width: 100%;
-    height: auto;
+    /* height: auto; */
   }
 
   body {
