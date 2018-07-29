@@ -3,10 +3,16 @@
   <div id="home">
 
     <h1 class="page_title">WinDoomFest</h1>
-    
-    <p>Get your post apocalyptic gear ready as we head to Valhala for WinDoomFest</p>
 
-    <p>Check out part 2 of this year's trailer from Geoff Thomas ...</p>
+    <p>This is Windhamfest's own little spot on the web. Enjoy the sights and sounds of years past and take a look at what's to come.</p>
+    
+    <h2>In the past</h2>
+
+    <p>We created history by going back to medieval times. Ultimately the world was destroyed and is better for it.</p>
+
+    <p>This year we are headed to the future where Windham is the only oasis left in the Catskill mountains.</p>
+
+    <br>
 
     <br><br>
 
@@ -31,9 +37,10 @@
 </script>
 
 <style scoped>
-    #windoomfest2 {
-        text-align: center;
-    }
+
+  #windoomfest2 {
+    text-align: center;
+  }
 
     iframe {
         min-height: 375px;
@@ -43,11 +50,6 @@
         width: 100%;
         height: 100%;
     } 
-    
-    p {
-      text-align: center;
-      margin: 20px 50px;
-    }
 
 </style>
 

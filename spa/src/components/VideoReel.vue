@@ -3,7 +3,14 @@
 
         <h1 class="page_title">Videos</h1>
 
+        <h2>A selection of Windhamfest videos by Hung Low Films</h2>
+
         <div id="video-reel">
+
+            <div id="windoomfest1">
+                <iframe src="https://player.vimeo.com/video/272444046" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            
             <div id="windoomfest2">
                 <iframe src="https://www.youtube.com/embed/NShuitIuKnM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
@@ -51,16 +58,19 @@
 
 <style scoped>
 
-    #video-reel {
-        display: flex;
-        flex-wrap: wrap;
+    #videos {
         text-align: center;
     }
 
+    #video-reel {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     #video-reel>* {
-        flex: 1 1 310px;
+        flex: 1 1 338px;
         min-height: 250px;
-        margin: 0em 1.5em;
+        margin: 0em 1em;
     }
 
     iframe {
@@ -68,7 +78,11 @@
         /* padding-bottom: 56.25%; */
         padding-bottom: 40%;
         width: 100%;
+        max-width: 600px;
+        max-height: 338px;
         height: 100%;
     }
+
+
 
 </style>

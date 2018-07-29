@@ -6,7 +6,9 @@
 
     <br>
 
-    <router-view/>
+    <div id="container">
+      <router-view/>  
+    </div>
     
     <br><br>
     
@@ -48,10 +50,22 @@
     background-color: black;
   }
 
+  #container {
+    margin: 0px 1em;
+  }
+
   .page_title {
     text-align: center;
     text-decoration: underline;
     margin-bottom: 1.75em;
+  }
+
+  p {
+    color: #bbbbbb;
+  }
+
+  h2, h3, h4, h5 {
+    color: #1B3D9F;
   }
 
 </style>
