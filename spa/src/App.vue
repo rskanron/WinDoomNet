@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img id="banner" src="./assets/windoomfest_banner_resized.gif"> 
+    <img id="banner" src="./assets/windham_wrestling_federation_main.jpg"> 
 
     <navigation/>
 
@@ -33,16 +33,16 @@
     margin: auto; 
     max-width: 1440px;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.25em;
+    font-size: 1.75em;
     -webkit-font-smoothing: antialiased;
-    /* color:  rgb(235, 82, 55);   */
-    color: #D82427;
+    color: #051FCA;
     background-color: black;
     height: 100%;
   }
 
   #banner {
     width: 100%;
+    margin-bottom: 0px;
     /* height: auto; */
   }
 
@@ -57,7 +57,8 @@
   .page_title {
     text-align: center;
     text-decoration: underline;
-    margin-bottom: 1.75em;
+    margin-bottom: 1em;
+    font-size: 3em;
   }
 
   p {
@@ -65,7 +66,7 @@
   }
 
   h2, h3, h4, h5 {
-    color: #1B3D9F;
+    color: rgb(170, 180, 81);
   }
 
 </style>

@@ -14,6 +14,10 @@
 </template>
 
 <style scoped>
+    #myTopnav {
+        margin-top: -5px;
+    }
+
     /* for mobile mode, so that the first item isn't showing at the top */
     .link-spacer {
         margin-left: -60px;
@@ -21,7 +25,8 @@
 
     /* Add a black background color to the top navigation */
     .topnav {
-        background-color: #333;
+        /* background-color: #CD2F0C; */
+        background-image: linear-gradient(#F24817, #FEF18B);
         overflow: hidden;
         text-align: center;
         /* margin-left: -60px; */
@@ -31,23 +36,23 @@
     .topnav a {
         display: inline-block;
         
-        color: #f2f2f2;
+        color: black;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 1em;
     }
 
     /* Change the color of links on hover */
     .topnav a:not(.link-spacer):hover {
-        background-color: #ddd; 
-        color: black;
+        background-color: #000024; 
+        color: white;
     }
 
     /* Add an active class to highlight the current page */
     .active-nav {
-        background-color: rgb(216, 70, 72); 
-           /* rgb(23, 97, 255); */
+        background-image: linear-gradient(#FEF18B, #F24817);
+        /* background-color: #4384D4;  */
         color: white;
     }
 
