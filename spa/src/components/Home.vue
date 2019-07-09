@@ -2,25 +2,28 @@
 
   <div id="home">
 
-    <h1 class="page_title">WinDoomFest</h1>
+    <h1 class="page_title">Windhamfest</h1>
 
-    <p>This is Windhamfest's own little spot on the web. Enjoy the sights and sounds of years past and take a look at what's to come.</p>
+    <div style="text-align: center;">
+      <h3>The Best There Is</h3>
+      <h3>The Best There Was</h3>
+      <h3>The Best There Ever Will Be</h3>
+    </div>
     
-    <h2>In the past</h2>
-
-    <p>We created history by going back to medieval times. Ultimately the world was destroyed and is better for it.</p>
-
-    <p>This year we are headed to the future where Windham is the only oasis left in the Catskill mountains.</p>
-
+    <br>
+    <hr />
     <br>
 
-    <br><br>
+    <h2 style="text-align: center;">Do you smell what LaRocca is cookin'?</h2>
+
+    <p style="text-align: center;">The biggest, baddest, Windhamfest ever. Do you think you can hang jabroni?</p>
+
+    <br>
+    <br>
 
     <div id="windoomfest2">
         <iframe src="https://www.youtube.com/embed/NShuitIuKnM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-
-    <br>
     
   </div>
   
