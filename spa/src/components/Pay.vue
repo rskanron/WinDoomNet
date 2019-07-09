@@ -41,7 +41,7 @@
 
         <h3>OR</h3>
 
-        <a href="https://venmo.com/Pat-Kelly">Venmo</a>
+        <a id="venmo_link" href="https://venmo.com/Pat-Kelly">Link to Venmo</a>
 
         
 
@@ -50,6 +50,10 @@
 </template>
 
 <style scoped>
+    #venmo_link {
+        font-size: 2em;
+    }
+
     .payment-column {
         margin: auto;
         padding: 10px;
@@ -57,12 +61,6 @@
     }
     .payment-column > * {
         display: inline;
-    }
-
-    a, a:visited {
-        font-size: 2em;
-        color: blue;
-        /* text-decoration: none; */
     }
 
 </style>

@@ -3,7 +3,11 @@
 
         <h1 class="page_title">Videos</h1>
 
-        <h2>A selection of Windhamfest videos by Hung Low Films</h2>
+        <h2>Take a walk ...</h2>
+            
+        <h2>down memory lane</h2>
+
+        <br><br>
 
         <div id="video-reel">
 
@@ -82,7 +86,5 @@
         max-height: 338px;
         height: 100%;
     }
-
-
 
 </style>
