@@ -32,6 +32,10 @@
         /* margin-left: -60px; */
     }
 
+    .topnav > * {
+        height: 1.15em;
+    }
+
     /* Style the links inside the navigation bar */
     .topnav a {
         display: inline-block;

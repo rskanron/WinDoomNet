@@ -33,7 +33,7 @@
     margin: auto; 
     max-width: 1440px;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.75em;
+    font-size: 1.4em;
     -webkit-font-smoothing: antialiased;
     color: #051FCA;
     background-color: black;
@@ -58,7 +58,7 @@
     text-align: center;
     text-decoration: underline;
     margin-bottom: 1em;
-    font-size: 3em;
+    font-size: 2em;
   }
 
   p {

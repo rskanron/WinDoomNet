@@ -11,20 +11,19 @@
     </div>
     
     <br>
-
-    <h2>Do you smell what LaRoc is cookin'?</h2>
-
-    <p>This going to be the biggest, baddest, Windhamfest ever. You don't know what you'll be missing if you pass this one up. Don't be a jabroni.</p>
-
+    <hr />
     <br>
 
-    <br><br>
+    <h2 style="text-align: center;">Do you smell what LaRocca is cookin'?</h2>
+
+    <p style="text-align: center;">The biggest, baddest, Windhamfest ever. Do you think you can hang jabroni?</p>
+
+    <br>
+    <br>
 
     <div id="windoomfest2">
         <iframe src="https://www.youtube.com/embed/NShuitIuKnM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
-
-    <br>
     
   </div>
   
