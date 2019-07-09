@@ -18,4 +18,8 @@ npm run build
 npm run build --report
 ```
 
+## Deployment
+
+Upload the build output in the "dist" folder to S3. There is a robots.txt file there that should not be overwritten or removed by the build.
+
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

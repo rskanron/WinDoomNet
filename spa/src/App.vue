@@ -12,7 +12,7 @@
     
     <br><br>
     
-    <p style="text-align: center;">By Windhamtech</p>
+    <p style="text-align: center;">By Windham Techies</p>
   </div>
 </template>
 
@@ -35,7 +35,7 @@
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.4em;
     -webkit-font-smoothing: antialiased;
-    color: #051FCA;
+    color: #0d49fc;
     background-color: black;
     height: 100%;
   }
@@ -43,7 +43,6 @@
   #banner {
     width: 100%;
     margin-bottom: 0px;
-    /* height: auto; */
   }
 
   body {
@@ -57,16 +56,21 @@
   .page_title {
     text-align: center;
     text-decoration: underline;
-    margin-bottom: 1em;
-    font-size: 2em;
+    margin-bottom: 1.8em;
+    font-size: 2.5em;
   }
 
   p {
-    color: #bbbbbb;
+    color: #cccccc;
   }
 
   h2, h3, h4, h5 {
-    color: rgb(170, 180, 81);
+    color: #e3df09;
+  }
+
+  a, a:visited {
+      color: #00b4eb;
+      /* text-decoration: none; */
   }
 
 </style>
