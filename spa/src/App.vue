@@ -56,7 +56,7 @@
   .page_title {
     text-align: center;
     text-decoration: underline;
-    margin-bottom: 1.8em;
+    margin-bottom: 1.5em;
     font-size: 2.5em;
   }
 
