@@ -33,6 +33,9 @@
 
   import WinDoomFest2 from './videos/WinDoomFest2'
 
+  ga('set', 'page', '/home');
+  ga('send', 'pageview');
+
   export default {
     name: 'Home'
   }

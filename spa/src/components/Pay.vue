@@ -67,6 +67,9 @@
 
 <script>
 
+    ga('set', 'page', '/pay');
+    ga('send', 'pageview');
+
     let data =  {
         selectNumThursday : 0,
         selectNumWeekend : 0,

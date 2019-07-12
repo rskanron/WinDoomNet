@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 import VideoReel from '@/components/VideoReel'
 import Music from '@/components/Music'
 import Pay from '@/components/Pay'
+import Info from '@/components/Info'
 
 Vue.use(Router)
 
@@ -30,6 +31,11 @@ export default new Router({
       path: '/pay',
       name: 'Pay',
       component: Pay
+    },
+    {
+      path: '/info',
+      name: 'Info',
+      component: Info
     }
   ]
 })
