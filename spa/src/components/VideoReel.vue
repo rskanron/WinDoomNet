@@ -53,9 +53,6 @@
 <script>
     import WinDoomFest2 from './videos/WinDoomFest2'
 
-    ga('set', 'page', '/videos');
-    ga('send', 'pageview');
-
     export default {
         name: 'VideoReel'
     }

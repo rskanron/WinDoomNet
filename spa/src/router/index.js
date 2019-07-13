@@ -1,14 +1,14 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
 import Home from '@/components/Home'
 import VideoReel from '@/components/VideoReel'
 import Music from '@/components/Music'
 import Pay from '@/components/Pay'
 import Info from '@/components/Info'
 
-Vue.use(Router)
+Vue.use(VueRouter)
 
-export default new Router({
+let vueRouter = new VueRouter({
   mode: 'history',
   linkExactActiveClass: 'active-nav',
   routes: [
@@ -39,3 +39,11 @@ export default new Router({
     }
   ]
 })
+
+vueRouter.afterEach( (to, from) => {
+  gtag('config', 'UA-143767169-1', {'page_path': to.fullPath});
+  ga('set', 'page', to.fullPath);
+  ga('send', 'pageview');
+})
+
+export default vueRouter

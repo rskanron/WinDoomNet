@@ -56,14 +56,4 @@
     li {
         color: #cccccc;
     }
-
-
-
 </style>
-
-<script>
-
-  ga('set', 'page', '/info');
-  ga('send', 'pageview');
-
-</script>

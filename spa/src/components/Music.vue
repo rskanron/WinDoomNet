@@ -78,11 +78,3 @@
 
 
 </style>
-
-<script>
-
-  ga('set', 'page', '/music');
-  ga('send', 'pageview');
-
-</script>
-
