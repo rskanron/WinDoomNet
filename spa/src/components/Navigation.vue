@@ -6,6 +6,7 @@
         <router-link tag="a" to="/videos">Videos</router-link>
         <router-link tag="a" to="/music">Music</router-link>
         <router-link tag="a" to="/pay">Pay</router-link>
+        <router-link tag="a" to="/info">Info</router-link>
 
         <a href="javascript:void(0);" class="icon" >
             <i class="fa fa-bars"></i>
