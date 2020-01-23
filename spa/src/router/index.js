@@ -41,8 +41,8 @@ let vueRouter = new VueRouter({
 })
 
 vueRouter.afterEach( (to, from) => {
-  gtag('config', 'UA-143767169-1', {'page_path': to.fullPath});
-  ga('set', 'page', to.fullPath);
+  gtag('config', 'UA-143767169-1', {'page_path': to.path});
+  ga('set', 'page', to.path);
   ga('send', 'pageview');
 })
 

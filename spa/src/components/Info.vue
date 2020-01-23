@@ -3,6 +3,12 @@
 
         <h1 class="page_title">The 411</h1>
 
+        <p style="text-align: center;">From: Aug 1 at 12:00 PM EDT</p>
+        <p style="text-align: center;">To: Aug 4 at 6:00 PM EDT</p>
+        <p style="text-align: center;">Join the <a href="https://www.facebook.com/groups/234997123205826/">Facebook Group</a> or ask a friend for more details.</p>
+
+        <br>
+
         <p>Please read below with the Ultimate Warrior Voice in your head, if you don't know who he is, check out this <a href="https://www.youtube.com/watch?v=Q46l70mNmCw">Ultimate Warror Video</a></p>
 
         <p>Friendsssss!!!! (Shake your head and ROID RAGE)</p>
@@ -20,8 +26,6 @@
         <p>Food will be catered from multiple different restaurants that will pack protein for MAX PERFORMANCE...The beer truck will be flowing nectar of the GODSSSSSSS all weekend.</p>
 
         <p>Saturday (Costume party) You Will be come the Warrior You've always dreamed of.. Pack your face paint, tights and ATTITUDES.</p>
-
-        <p><a href="https://www.facebook.com/search/top/?q=windhamfest">Click Here</a> to join the Windhamfest Facebook Group</p>
 
         <h3>Cost:</h3> 
         <p>includes all food, beverages and amenities.</p>
